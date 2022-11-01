@@ -8,7 +8,7 @@ public:
             
             mp[x]++;
             
-            if(mp[x] > 1)
+            if(mp[x] >= 2)
                 return true;
         }
         
