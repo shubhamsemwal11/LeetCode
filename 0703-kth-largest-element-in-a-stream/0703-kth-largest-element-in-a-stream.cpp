@@ -13,17 +13,10 @@ public:
     
     int add(int val) {
         
-        if(minh.size() < K)
-            minh.push(val);
+        minh.push(val);
         
-        else {
-            
-            if(val > minh.top()) {
-                
-                minh.pop();
-                minh.push(val);
-            }
-        }
+        if(minh.size() > K)
+            minh.pop();
         
         return minh.top();
     }
