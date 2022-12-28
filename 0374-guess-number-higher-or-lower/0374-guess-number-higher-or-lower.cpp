@@ -11,7 +11,7 @@ class Solution {
 public:
     int guessNumber(int n) {
         
-        int start = 0, end = n, mid = -1;
+        int start = 0, end = n, mid = -2;
         
         while(start <= end) {
             
